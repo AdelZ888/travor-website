@@ -46,7 +46,7 @@ export function ServicesSection() {
 
   return (
     <section ref={sectionRef} className="py-24 lg:py-32 bg-background overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div 
           className="max-w-2xl"
@@ -114,16 +114,16 @@ export function ServicesSection() {
                   transition={{ duration: 0.3 }}
                 />
                 
-                <div className="absolute inset-0 p-8 flex flex-col justify-end">
+                <div className="absolute inset-0 p-4 sm:p-6 md:p-8 flex flex-col justify-end">
                   <motion.h3 
-                    className="font-serif text-2xl md:text-3xl font-medium text-primary-foreground"
+                    className="font-serif text-xl sm:text-2xl md:text-3xl font-medium text-primary-foreground"
                     initial={{ y: 0 }}
                     whileHover={{ y: -5 }}
                   >
                     {service.title}
                   </motion.h3>
                   <motion.p 
-                    className="mt-2 text-sm font-light text-primary-foreground/80 max-w-md"
+                    className="mt-2 text-xs sm:text-sm font-light text-primary-foreground/80 max-w-md line-clamp-2 sm:line-clamp-none"
                     initial={{ opacity: 0.8 }}
                     whileHover={{ opacity: 1 }}
                   >

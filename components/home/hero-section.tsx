@@ -114,7 +114,7 @@ export function HeroSection() {
 
       {/* Content */}
       <motion.div 
-        className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 text-center pt-20"
+        className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center pt-24 sm:pt-20"
         style={{ y: textY, opacity }}
       >
         <motion.div 
@@ -176,7 +176,7 @@ export function HeroSection() {
             <MagneticButton strength={0.2}>
               <Link
                 href="/realisations"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground bg-primary rounded-sm transition-all hover:bg-terracotta-dark uppercase"
+                className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-primary-foreground bg-primary rounded-sm transition-all hover:bg-terracotta-dark uppercase"
               >
                 Découvrir nos réalisations
                 <motion.span
@@ -191,7 +191,7 @@ export function HeroSection() {
             <MagneticButton strength={0.2}>
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground border border-primary-foreground/30 rounded-sm transition-all hover:bg-primary-foreground/10 uppercase"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-primary-foreground border border-primary-foreground/30 rounded-sm transition-all hover:bg-primary-foreground/10 uppercase"
               >
                 Nous contacter
               </Link>
@@ -207,18 +207,18 @@ export function HeroSection() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 1.2, duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
       >
-        <div className="mx-auto max-w-7xl px-6 lg:px-8 py-8">
-          <div className="grid grid-cols-3 gap-8 text-center">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-6 sm:py-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 text-center">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1.4, duration: 0.5 }}
               className="flex flex-col items-center"
             >
-              <div className="font-serif text-4xl md:text-5xl font-medium text-foreground tabular-nums">
+              <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-foreground tabular-nums">
                 <SlotMachineCounter value={12} suffix="+" duration={1.8} />
               </div>
-              <p className="mt-2 text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Années d{"'"}expérience</p>
+              <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Années d{"'"}expérience</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -226,10 +226,10 @@ export function HeroSection() {
               transition={{ delay: 1.5, duration: 0.5 }}
               className="flex flex-col items-center"
             >
-              <div className="font-serif text-4xl md:text-5xl font-medium text-foreground tabular-nums">
+              <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-foreground tabular-nums">
                 <SlotMachineCounter value={150} suffix="+" duration={2.2} />
               </div>
-              <p className="mt-2 text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Projets livrés</p>
+              <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Projets livrés</p>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -237,10 +237,10 @@ export function HeroSection() {
               transition={{ delay: 1.6, duration: 0.5 }}
               className="flex flex-col items-center"
             >
-              <div className="font-serif text-4xl md:text-5xl font-medium text-foreground tabular-nums">
+              <div className="font-serif text-3xl sm:text-4xl md:text-5xl font-medium text-foreground tabular-nums">
                 <GlowingCounter value={4.9} decimals={1} duration={1.5} />
               </div>
-              <p className="mt-2 text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Note Google</p>
+              <p className="mt-1 sm:mt-2 text-[10px] sm:text-xs md:text-sm font-light text-muted-foreground uppercase tracking-wide">Note Google</p>
             </motion.div>
           </div>
         </div>

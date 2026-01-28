@@ -32,7 +32,7 @@ export function ProcessSection() {
 
   return (
     <section ref={sectionRef} className="py-24 lg:py-32 bg-background overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div 
           className="text-center max-w-2xl mx-auto"
@@ -68,7 +68,7 @@ export function ProcessSection() {
         </motion.div>
 
         {/* Steps */}
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
+        <div className="mt-12 sm:mt-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-10 lg:gap-8">
           {steps.map((step, index) => (
             <motion.div
               key={step.number}
@@ -94,7 +94,7 @@ export function ProcessSection() {
                 transition={{ type: "spring", stiffness: 300 }}
               >
                 <motion.span 
-                  className="font-serif text-5xl font-medium text-primary/20 block"
+                  className="font-serif text-4xl sm:text-5xl font-medium text-primary/20 block"
                   initial={{ opacity: 0, scale: 0.5 }}
                   animate={isInView ? { opacity: 1, scale: 1 } : {}}
                   transition={{ duration: 0.5, delay: 0.4 + index * 0.15 }}

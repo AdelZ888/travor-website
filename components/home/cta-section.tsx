@@ -12,9 +12,9 @@ export function CTASection() {
 
   return (
     <section ref={sectionRef} className="py-24 lg:py-32 bg-background overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <motion.div 
-          className="bg-secondary rounded-sm p-12 lg:p-20 text-center relative overflow-hidden"
+          className="bg-secondary rounded-sm p-6 sm:p-10 md:p-12 lg:p-20 text-center relative overflow-hidden"
           initial={{ opacity: 0, y: 60, scale: 0.95 }}
           animate={isInView ? { opacity: 1, y: 0, scale: 1 } : {}}
           transition={{ duration: 0.8 }}
@@ -62,7 +62,7 @@ export function CTASection() {
             <MagneticButton strength={0.2}>
               <Link
                 href="/contact"
-                className="group inline-flex items-center justify-center gap-2 px-8 py-4 text-sm font-medium tracking-wide text-primary-foreground bg-primary rounded-sm transition-all hover:bg-terracotta-dark uppercase"
+                className="group inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-primary-foreground bg-primary rounded-sm transition-all hover:bg-terracotta-dark uppercase"
               >
                 Demander un devis gratuit
                 <motion.span
@@ -76,7 +76,7 @@ export function CTASection() {
             <MagneticButton strength={0.2}>
               <Link
                 href="tel:+33123456789"
-                className="inline-flex items-center justify-center px-8 py-4 text-sm font-medium tracking-wide text-foreground border border-border rounded-sm transition-all hover:bg-foreground hover:text-background uppercase"
+                className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 text-xs sm:text-sm font-medium tracking-wide text-foreground border border-border rounded-sm transition-all hover:bg-foreground hover:text-background uppercase"
               >
                 +33 1 23 45 67 89
               </Link>

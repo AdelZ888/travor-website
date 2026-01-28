@@ -62,7 +62,7 @@ export function TestimonialsSection() {
 
   return (
     <section ref={sectionRef} className="py-24 lg:py-32 bg-primary">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center">
           <p className="animate-on-scroll opacity-0 text-xs font-light tracking-[0.3em] uppercase text-primary-foreground/70 mb-4">
@@ -84,7 +84,7 @@ export function TestimonialsSection() {
             </div>
 
             {/* Quote */}
-            <blockquote className="font-serif text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground leading-relaxed">
+            <blockquote className="font-serif text-lg sm:text-xl md:text-2xl lg:text-3xl font-light text-primary-foreground leading-relaxed">
               &ldquo;{testimonials[currentIndex].content}&rdquo;
             </blockquote>
 

@@ -58,7 +58,7 @@ export function ProjectsSection() {
 
   return (
     <section ref={sectionRef} className="py-24 lg:py-32 bg-secondary overflow-hidden">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <motion.div 
           className="flex flex-col md:flex-row md:items-end md:justify-between gap-6"
@@ -102,7 +102,7 @@ export function ProjectsSection() {
 
         {/* Projects Grid with TiltCards */}
         <motion.div 
-          className="mt-12 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8"
+          className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
           variants={containerVariants}
           initial="hidden"
           animate={isInView ? "visible" : "hidden"}
@@ -115,7 +115,7 @@ export function ProjectsSection() {
             >
               <TiltCard tiltStrength={8} scale={1.02}>
                 <Link href={project.href} className="group block">
-                  <div className="relative overflow-hidden rounded-sm aspect-[3/4]">
+                  <div className="relative overflow-hidden rounded-sm aspect-[4/3] sm:aspect-[3/4]">
                     <Image
                       src={project.image || "/placeholder.svg"}
                       alt={project.title}
